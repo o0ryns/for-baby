@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Shafiqah ❤️</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            120deg,
+            #ff9a9e,
+            #fad0c4,
+            #fbc2eb,
+            #a18cd1
+        );
+
+    background-size: 400% 400%;
+
+    animation: gradientMove 15s ease infinite;
+}
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+@keyframes gradientMove {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
+/* =========================
+   BOKEH
+========================= */
+
+.bokeh {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.15);
+
+    pointer-events: none;
+
+    animation: floatBokeh linear infinite;
+
+}
+
+
+@keyframes floatBokeh {
+
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    50% {
+        transform: translateY(50vh) scale(0.5);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(0);
+    }
+
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+
+    width: min(90vw, 430px);
+
+    padding: 30px 25px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.16);
+
+    border-radius: 28px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 0 30px rgba(255,255,255,0.25),
+        inset 0 0 30px rgba(255,255,255,0.08);
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.profile {
+
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid white;
+
+    margin-bottom: 12px;
+
+    box-shadow:
+        0 0 20px rgba(255,255,255,0.5);
+
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+h2 {
+
+    margin: 5px 0 15px;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    text-shadow:
+        0 3px 10px rgba(0,0,0,0.12);
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+
+    margin-bottom: 18px;
+
+    padding: 11px 28px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: white;
+
+    color: #ff6b81;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.12);
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    transform: scale(1.07);
+
+    box-shadow:
+        0 7px 20px rgba(255,255,255,0.4);
+
+}
+
+
+button:active {
+
+    transform: scale(0.95);
+
+}
+
+
+/* =========================
+   TEXT BOX
+========================= */
+
+.scroll-box {
+
+    width: 100%;
+
+    height: 280px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: rgba(80,50,100,0.13);
+
+    border: 1px solid rgba(255,255,255,0.18);
+
+    box-shadow:
+
+        inset 0 0 25px rgba(255,255,255,0.08),
+
+        0 0 20px rgba(255,255,255,0.12);
+
+}
+
+
+/* =========================
+   TEXT AREA
+========================= */
+
+.text-scroll {
+
+    position: absolute;
+
+    left: 0;
+
+    width: 100%;
+
+    padding: 0 25px;
+
+    text-align: left;
+
+    transform: translateY(100%);
+
+}
+
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.text-scroll p {
+
+    margin: 0 0 28px;
+
+    width: 100%;
+
+    font-size: 17px;
+
+    line-height: 1.65;
+
+    font-weight: 400;
+
+    color: rgba(255,255,255,0.96);
+
+    text-align: left;
+
+    overflow-wrap: break-word;
+
+    word-wrap: break-word;
+
+}
+
+
+/* Last text */
+
+.text-scroll p:last-child {
+
+    text-align: center;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #ffe5ed;
+
+    text-shadow:
+        0 0 8px #ff6b81,
+        0 0 18px #ff6b81;
+
+}
+
+
+/* =========================
+   HEARTS
+========================= */
+
+.heart {
+
+    position: absolute;
+
+    pointer-events: none;
+
+    animation: fall linear infinite;
+
+    z-index: 1;
+
+}
+
+
+@keyframes fall {
+
+    0% {
+
+        transform:
+            translateY(-10vh)
+            rotate(0deg);
+
+        opacity: 1;
+
+    }
+
+    80% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(110vh)
+            rotate(20deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .container {
+
+        width: 88vw;
+
+        padding: 25px 18px;
+
+    }
+
+
+    .profile {
+
+        width: 120px;
+
+        height: 120px;
+
+    }
+
+
+    h2 {
+
+        font-size: 20px;
+
+    }
+
+
+    .scroll-box {
+
+        height: 270px;
+
+    }
+
+
+    .text-scroll {
+
+        padding: 0 20px;
+
+    }
+
+
+    .text-scroll p {
+
+        font-size: 15px;
+
+        line-height: 1.6;
+
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<audio id="music" loop>
+
+    <source
+        src="takkanhilang.mp4"
+        type="audio/mpeg">
+
+</audio>
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<div class="container">
+
+
+    <img
+        src="cepet.jpg"
+        class="profile"
+        alt="Shafiqah">
+
+
+    <h2>
+        Special For You Shafiqah Shahirah ❤️
+    </h2>
+
+
+    <button onclick="startUltimate()">
+
+        klik sini baby 💌
+
+    </button>
+
+
+    <!-- =========================
+         TEXT BOX
+    ========================= -->
+
+    <div class="scroll-box">
+
+        <div
+            class="text-scroll"
+            id="textScroll">
+
+
+            <p>
+
+                HII BABY SAYA BUAT NI KHAS UNTUK AWAK KESAYANGAN SAYA ! BACA CAMPAI HABISH TAU BABY HIHIHI</p>
+
+            <p> 
+                kat sini saya cuma nak cakap terima kasih sebab dah hadir dalam hidup saya.
+                terima kasih sebab selalu ada untuk saya. terima kasih jaga saya dengan baik.
+                terima kasih untuk semuanya selama ni yang pernah awak bagi and kongsi dengan saya <33☹️</p>
+
+            <p>
+                saya rindu awak baby :) saya rindu nak awak yang dulu hm 🫠
+                balik la baby jadi macam dulu saya rindu baby manja saya 🥹
+                saya nak awak baby. saya nak kita. saya rindu sangat baby saya tak mampu nak tipu 
+                lagi saya tak kuat tanpa awak baby☹️</p>
+
+            <p>
+                jangan menyerah baby saya tahu awak kuat awak bole balik macam dulu ☹️☹️
+                bagi saya peluang baby saya janji takkan sia sia kan awak saya akan jaga awak betul ii baby.
+                jangan tinggalkan saya baby :( saya ada awak je baby dah takde sesape dah hm</p>
+
+            <p>
+                saya mintak maaf baby kalau selamani saya layan baby teruk,
+                buat baby nangis, overthinking and buat baby rasa saya tak
+                sayang baby ke tak pujuk baby ke 🥹🥹</p>
+
+            <p>
+
+                saya mintak maaf sangat tau 🫠</p>
+
+            <p>
+
+                saya sayang baby sangat, saya taknak hilang baby ☹️</p>
+
+            <p>
+
+                biarla lagu ni, text saya ni jadi bukti how much i love you baby.</p>
+            <p>
+
+                i know coding i ni simple i takde idea but this is a proof
+                that i really really love you my baby 🥺</p>
+
+            <p>
+
+                saya harap baby tak pendam apa apa dengan saya tau, saya harap baby boleh
+                bagi saya peluang untuk dapat hati baby balik 🫠</p>
+
+            <p>
+
+                i hope you will stay for a long time with me ☹️</p>
+
+            <p>
+
+                happy happy dengan i celalu tau baby tau 🤏🏻</p>
+
+            <p>
+
+                ilopeyouuu coo coo much babyy cepet manja caye !! 💋😩🫰🏻🤍🤍
+
+            </p>
+
+
+            <p>
+
+                your love - ririn
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+
+/* =========================
+   START
+========================= */
+
+function startUltimate() {
+
+
+    /* PLAY MUSIC */
+
+    const music =
+        document.getElementById("music");
+
+    music.play().catch(error => {
+
+        console.log("Music blocked:", error);
+
+    });
+
+
+    /* TEXT */
+
+    const box =
+        document.querySelector(".scroll-box");
+
+    const text =
+        document.getElementById("textScroll");
+
+
+    /* Reset position */
+
+    text.style.transition = "none";
+
+    text.style.transform =
+        `translateY(${box.clientHeight}px)`;
+
+
+    /*
+       Tunggu browser kira
+       tinggi text dahulu
+    */
+
+    setTimeout(() => {
+
+
+        const boxHeight =
+            box.clientHeight;
+
+        const textHeight =
+            text.scrollHeight;
+
+
+        /*
+           Start dari bawah box
+           kemudian bergerak ke atas
+        */
+
+        let start =
+            boxHeight;
+
+
+        let end =
+            -textHeight;
+
+
+        let duration =
+            Math.max(
+                25000,
+                textHeight * 65
+            );
+
+
+        let startTime = null;
+
+
+        function animate(currentTime) {
+
+
+            if (!startTime) {
+
+                startTime =
+                    currentTime;
+
+            }
+
+
+            let elapsed =
+                currentTime - startTime;
+
+
+            let progress =
+                elapsed / duration;
+
+
+            if (progress > 1) {
+
+                progress = 1;
+
+            }
+
+
+            /*
+               Smooth movement
+            */
+
+            let currentPosition =
+                start +
+                (end - start) * progress;
+
+
+            text.style.transform =
+                `translateY(${currentPosition}px)`;
+
+
+            if (progress < 1) {
+
+                requestAnimationFrame(
+                    animate
+                );
+
+            }
+
+        }
+
+
+        requestAnimationFrame(
+            animate
+        );
+
+
+    }, 100);
+
+}
+
+
+
+/* =========================
+   FALLING HEARTS
+========================= */
+
+setInterval(() => {
+
+
+    let heart =
+        document.createElement("div");
+
+
+    heart.classList.add("heart");
+
+
+    heart.innerHTML =
+        "💖";
+
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+
+    heart.style.animationDuration =
+        (Math.random() * 4 + 3) + "s";
+
+
+    heart.style.fontSize =
+        (Math.random() * 20 + 15) + "px";
+
+
+    document.body.appendChild(
+        heart
+    );
+
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    }, 7000);
+
+
+}, 450);
+
+
+
+/* =========================
+   BOKEH
+========================= */
+
+for (
+    let i = 0;
+    i < 30;
+    i++
+) {
+
+
+    let bokeh =
+        document.createElement("div");
+
+
+    bokeh.classList.add(
+        "bokeh"
+    );
+
+
+    let size =
+        Math.random() * 15 + 5;
+
+
+    bokeh.style.width =
+        size + "px";
+
+
+    bokeh.style.height =
+        size + "px";
+
+
+    bokeh.style.left =
+        Math.random() * 100 + "vw";
+
+
+    bokeh.style.top =
+        Math.random() * 100 + "vh";
+
+
+    bokeh.style.animationDuration =
+        (Math.random() * 10 + 5) + "s";
+
+
+    document.body.appendChild(
+        bokeh
+    );
+
+}
+
+</script>
+
+</body>
+</html>
